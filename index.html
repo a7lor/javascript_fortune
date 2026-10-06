@@ -1,22 +1,29 @@
-/* 紙吹雪 */
-.confetti {
-  position: fixed;
-  top: -20px;
-  z-index: 9999;
-  pointer-events: none;
-  animation-name: fall;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
+<!DOCTYPE html>
+<html lang="ja">
 
-@keyframes fall {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
 
-  100% {
-    transform: translateY(110vh) rotate(720deg);
-    opacity: 0;
-  }
-}
+<body>
+
+    <header>
+        <h1>Fortune Slip</h1>
+    </header>
+
+    <main>
+        <button id="drawButton" type="button">おみくじを引く</button>
+        <h2 id="resultDisplay">？</h2>
+    </main>
+
+    <footer>
+        <p>© SampleSite</p>
+    </footer>
+
+</body>
+
+</html>
